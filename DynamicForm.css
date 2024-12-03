@@ -1,0 +1,141 @@
+/* Feedback Message */
+.feedback-message {
+  background-color: #4caf50; /* Success color */
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Progress Bar Container */
+.progress-bar {
+  margin-top: 20px;
+}
+
+/* Overall Progress Bar Style */
+.progress {
+  background-color: #f3f3f3; /* Light gray background */
+  height: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Progress Fill (the moving green part) */
+.progress-fill {
+  background-color: #4caf50; /* Green fill */
+  height: 100%;
+  border-radius: 10px;
+  width: 0%; /* Set dynamically */
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Button Styles */
+button {
+  background-color: #4caf50; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Shrink button slightly on click */
+}
+
+button.action-feedback {
+  animation: buttonClick 0.5s ease-in-out; /* Animation on button click */
+}
+
+/* Form Fields (input/select elements) */
+input,
+select {
+  width: 100%; /* Full width input */
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+}
+
+/* Label Styles */
+label {
+  font-weight: bold;
+}
+
+/* Form Group (each input/select pair) */
+.form-group {
+  margin-bottom: 15px; /* Space between form elements */
+}
+
+/* Submitted Data Section */
+.submitted-data {
+  margin-top: 20px;
+}
+
+/* Table for Submitted Data */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove spaces between table cells */
+}
+
+/* Table Header and Data Cell Styles */
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd; /* Light gray border for cells */
+}
+
+/* Button for Actions in Table (Edit/Delete) */
+button {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px; /* Space between action buttons */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Fade-In Animation for Feedback */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    opacity: 1; /* Fade in */
+  }
+}
+
+/* Button Click Animation */
+@keyframes buttonClick {
+  0% {
+    transform: scale(1); /* Normal size */
+    background-color: #45a049; /* Darker green */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly enlarge */
+    background-color: #3e8e41; /* Even darker green */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
+    background-color: #4caf50; /* Return to original color */
+  }
+}
